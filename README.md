@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/87737710/165315276-3d22a6c9-6079-432c-83b8-b4e200923685.png" width="1000" height="1000">
+<img src="https://user-images.githubusercontent.com/87737710/165318321-7a850aca-0147-4ab1-aa2e-2ff87b0f10c2.png">
 
 # FoodSnap
  ICS4U0 Team Project Submission
@@ -8,7 +8,7 @@
  - Rahul R
  - Rayyan M
 
-Developed with:
+Developed Using:
 - ReactJS
 - JavaScript
 - CSS
