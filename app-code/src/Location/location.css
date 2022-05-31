@@ -1,0 +1,9 @@
+.main-map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*put a border on the left side of the div*/
+    border-left: 3px solid #000000;
+
+
+}
