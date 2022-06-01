@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Navbar/Navbar';
 import { Route, Routes} from 'react-router-dom';
 import Landing from './Landing/Landing';
-import Locution from './Location/Locution';
+import Locution from './Location/locution';
 import Faq from './FAQ/faq';
 
 

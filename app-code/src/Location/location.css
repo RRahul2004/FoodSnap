@@ -1,9 +1,31 @@
 .main-map {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     right: 0;
-    /*put a border on the left side of the div*/
-    border-left: 3px solid #000000;
-
-
+    top: 80px;
 }
+
+button {
+    position: relative;
+    display:block;
+    width: 300px;
+    font-size: 15px;
+    left: 150px;
+    margin: 20px;
+    background-color: #FFB703;
+    border-radius: 10px;
+    border:none;
+}
+
+.bank-1:hover {
+    background-color: green;
+    box-shadow: 5px 5px #D4D4D4;
+}
+.bank-2:hover {
+    background-color: pink;
+    box-shadow: 5px 5px #D4D4D4;
+}
+.bank-3:hover {
+    background-color: blue;
+    box-shadow: 5px 5px #D4D4D4;
+}
+
