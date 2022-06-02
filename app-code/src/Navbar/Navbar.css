@@ -1,3 +1,7 @@
+body{
+    width:100%;
+}
+
 .NavbarItems {
     background: #023047;
     height: 80px;

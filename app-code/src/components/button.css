@@ -3,12 +3,14 @@
 
 }
 
+
 .btn {
     padding: 8px 20px;
     border-radius: 10px;
     outline: none;
     border: none;
     cursor: pointer;
+    left: 0;
 }
 
 .btn:hover{

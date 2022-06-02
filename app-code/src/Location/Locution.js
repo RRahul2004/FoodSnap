@@ -6,7 +6,7 @@ import './location.css';
 function Locution() {
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        //googleMapsApiKey: "AIzaSyBBQOhA59C1dGhx4JI1La2nr4eIjMV4SFc",
+        //googleMapsApiKey: "AIzaSyBOjXjnkULjxJ6dWnN-3I5FhS5RNdB_eBY",
     });
 
     if (!isLoaded) return <div>Loading...</div>
@@ -48,7 +48,7 @@ function Locution() {
 
 
             <div className="main-map">
-                <GoogleMap zoom={10} mapContainerStyle = {styles} center = {center}>
+                <GoogleMap zoom={12} mapContainerStyle = {styles} center = {center}>
                     <Marker position={ seva } icon={{ url:"http://maps.google.com/mapfiles/ms/icons/green-dot.png"} } />
                     
                     <Marker position={ miss } icon={{ url:"http://maps.google.com/mapfiles/ms/icons/pink-dot.png"} } />

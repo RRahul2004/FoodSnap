@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import { Route, Routes} from 'react-router-dom';
-import Landing from './Landing/Landing';
-import Locution from './Location/locution';
+import Landing from './Landing/landing';
+import Locution from './Location/Locution';
 import Faq from './FAQ/faq';
 
 
