@@ -1,5 +1,6 @@
 import React from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import { Links } from "react-router-dom";
 
 import './location.css';
 
@@ -29,21 +30,21 @@ function Locution() {
     return (
         <div>
             <div className="banks">
-                <button className="bank-1">
+                <a target = "_blank" href = {"https://www.sevafoodbank.com/"} className="bank-1">
                     <h2>Seva Food Bank</h2>
                     <h3>3413 Wolfedale Rd Unit #10</h3>
                     <h4>(905) 361-7382 ext. 1</h4>
-                </button>
-                <button className="bank-2">
+                </a>
+                <a target = ".blank" href = {"https://www.themississaugafoodbank.org/"} className="bank-2">
                     <h2>Mississauga Food Bank</h2>
                     <h3>3121 Universal Dr</h3>
                     <h4>(905) 270-5589</h4>
-                </button>
-                <button className="bank-3">
+                </a>
+                <a target = ".blank" href ={"https://www.muslimwelfarecentre.com/"} className="bank-3">
                     <h2>Muslim Welfare Center</h2>
                     <h3>3490 Mavis Rd</h3>
                     <h4>(905) 281-9730</h4>
-                </button>
+                </a>
             </div>
 
 

@@ -4,28 +4,40 @@
     top: 80px;
 }
 
-button {
+.banks a {
+    text-decoration: none;
+    color: black;
     position: relative;
     display:block;
+    text-align: center;
     width: 300px;
     font-size: 15px;
     left: 150px;
     margin: 20px;
+    padding: 10px;
     background-color: #FFB703;
     border-radius: 10px;
     border:none;
 }
 
+.banks {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
 .bank-1:hover {
-    background-color: green;
+    background-color: #fb8500;
     box-shadow: 5px 5px #D4D4D4;
 }
 .bank-2:hover {
-    background-color: pink;
+    background-color: #fb8500;
     box-shadow: 5px 5px #D4D4D4;
 }
 .bank-3:hover {
-    background-color: blue;
+    background-color: #fb8500;
     box-shadow: 5px 5px #D4D4D4;
 }
 
