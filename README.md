@@ -22,7 +22,7 @@ ____________________________________________________________________
 This project was created with React JS and CSS
 To use/download/edit this project you muse have Node.JS and NPM installed
 
-**Getting access to the project*
+**Getting access to the project**
 
 Create a emtpy directory wherever you want on your computer    
 
