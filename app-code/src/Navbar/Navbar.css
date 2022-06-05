@@ -25,8 +25,10 @@ body{
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 0;
 }
 
 .nav-links {
@@ -68,6 +70,7 @@ body{
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease-out;
+        justify-content: center;
     }
 
     .nav-menu.active {
@@ -76,13 +79,15 @@ body{
         opacity: 1;
         transition: all 0.5s ease-out;
         z-index: 1;
+        margin: 0;
     }
 
     .nav-links {
         text-align: center;
-        padding: 2rem;
         width: 100%;
         display: table;
+        padding: 0 2rem 2rem;
+        vertical-align: center;
     }
 
     .nav-links:hover {
@@ -92,10 +97,9 @@ body{
     }
 
     .navbar-logo {
-        position: fixed;
-        top: 0;
-        margin-left: 0;
-        left: 0;
+        position: relative;
+
+        right: 130px;
         transform: translate(25%, -10%);
     }
 
@@ -133,7 +137,20 @@ body{
         transition: 250ms;
     }
 
-    Button{
+    .log-btn Button{
         display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar-logo {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-logo {
+        display: flex;
+        float: left;
     }
 }

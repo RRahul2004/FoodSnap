@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <div className='container'>
         <Routes>
+          <Route path='/' element={<Landing />} />
           <Route path='/home' element={<Landing />} />
           <Route path='/Location' element={<Locution />} />
           <Route path='/faq' element={<Faq />} />

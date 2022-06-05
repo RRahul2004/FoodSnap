@@ -1,19 +1,5 @@
+/* CSS code for the landing page*/
 
-
-
-table {
-    border: 2px solid forestgreen;
-    width: 800px;
-    height: 200px;
-}
-
-th {
-    border-bottom: 1px solid black;
-}
-
-td {
-    text-align: center;
-}
 
 .top-content {
     display: flex;
@@ -25,6 +11,7 @@ td {
 }
 
 .top-content h1 {
+    text-align: center;
     color: white;
     font-weight: bolder;
     margin-top: 0;
@@ -33,9 +20,8 @@ td {
 .top-content h3 {
     color: white;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    margin: 10px;
 }
 
 .foods {
@@ -63,65 +49,59 @@ td {
 }
 
 .oil, .banana, .flour {
-    margin-left: 10px;
-    margin-right: 10px;
     float: left;
-    height: 300px;
+    height: 400px;
     width: 250px;
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid #ffb707;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px 10px;
     background-color: #023047;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: #ffb707;
-    border-width: 3px;
+}
+
+.increase-button, .decrease-button {
+    width: 20%;
+    color:white;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb707;
+    margin: 5px;
+}
+
+.increase-button:hover, .decrease-button:hover {
+    background-color: white;
+    color: #ffb707;
+    width: 25%;
+}
+
+.seva-items {
+    text-align: center;
+    background-color: #8ecae6;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.seva-items h3 {
+    margin: 5px;
+}
+
+@media (max-width: 500px){
+    .top-content h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 
-/*.oil {*/
-/*    background-color: lightgray;*/
-/*    border-radius: 10px;*/
-/*    border-color: black;*/
-/*    border-style: solid;*/
-/*    float: left;*/
-/*    padding-left: 50px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.banana {*/
-/*    background-color: lightgray;*/
-/*    border-radius: 10px;*/
-/*    border-color: black;*/
-/*    border-style: solid;*/
-/*    float: left;*/
-/*    padding-top: 50px;*/
-/*    padding-left: 50px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.flour {*/
-/*    background-color: lightgray;*/
-/*    border-radius: 10px;*/
-/*    border-color: black;*/
-/*    border-style: solid;*/
-/*    float: left;*/
-/*    padding-top: 50px;*/
-/*    padding-left: 50px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*}*/

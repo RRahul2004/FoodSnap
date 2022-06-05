@@ -23,8 +23,10 @@ export const Button = ({
     const checkSize = SIZES.includes(ButtonSize) ? ButtonSize : SIZES[0];
 
     return(
-        <button className={`btn ${checkStyle} ${checkSize}`} onClick={onClick} type={type}>
-            {children}
-        </button>
+        <div className={"log-btn"}>
+            <button className={`btn ${checkStyle} ${checkSize}`} onClick={onClick} type={type}>
+                {children}
+            </button>
+        </div>
     )
 }
