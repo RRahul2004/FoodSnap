@@ -1,0 +1,107 @@
+/* CSS code for the landing page*/
+
+
+.top-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #023047;
+}
+
+.top-content h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+.top-content h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.foods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #dcdcdc;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-1 {
+    text-align: center;
+    color: white;
+    background-color: #ffb707;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-1 h2 {
+    margin: 0;
+}
+
+.oil, .banana, .flour {
+    float: left;
+    height: 400px;
+    width: 250px;
+    text-align: center;
+    border: 3px solid #ffb707;
+    border-radius: 10px;
+    margin: 20px 10px;
+    background-color: #023047;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.increase-button, .decrease-button {
+    width: 20%;
+    color:white;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb707;
+    margin: 5px;
+}
+
+.increase-button:hover, .decrease-button:hover {
+    background-color: white;
+    color: #ffb707;
+    width: 25%;
+}
+
+.seva-items {
+    text-align: center;
+    background-color: #8ecae6;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.seva-items h3 {
+    margin: 5px;
+}
+
+@media (max-width: 500px){
+    .top-content h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+

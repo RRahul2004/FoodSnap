@@ -1,0 +1,67 @@
+.main-map {
+}
+
+.info {
+    width: 200%;
+}
+
+.banks a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 300px;
+    font-size: 15px;
+    left: 150px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #FFB703;
+    border-radius: 10px;
+}
+
+.banks {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #dcdcdc;
+}
+
+.bank-1:hover {
+    background-color: #fb8500;
+    box-shadow: 5px 5px #D4D4D4;
+}
+.bank-2:hover {
+    background-color: #fb8500;
+    box-shadow: 5px 5px #D4D4D4;
+}
+.bank-3:hover {
+    background-color: #fb8500;
+    box-shadow: 5px 5px #D4D4D4;
+}
+
+.seva-marker {
+    color: green;
+    font-size: 15px;
+}
+
+.mfb-marker {
+    color: red;
+    font-size: 15px;
+}
+
+.mwc-marker {
+    color: blue;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .banks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
