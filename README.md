@@ -44,15 +44,19 @@ This entire page was added manually
 **Node Modules used**
 ``npm install firebase``    
 We used firebase to store information such as emails and food quantities. This package allowed us to interact with Google Firestore and manipulate the data.    
+https://firebase.google.com/docs    
 
 ``npm install react-router-dom``  
 This package allowed us to route all the pages together. It is the backbone of the Navbar    
+https://reactrouter.com/docs/en/v6    
 
 ``npm install react``    
-This is the react package https://reactjs.org/
+This is the react package    
+https://reactjs.org/    
 
 ``npm install @react-google-maps/api``
-This is the Google Maps API that allowed us to implement a live map, shwoing the loactions of the foodbanks compared to the users location. (https://developers.google.com/maps/documentation/javascript/react-map)    
+This is the Google Maps API that allowed us to implement a live map, shwoing the loactions of the foodbanks compared to the users location.    
+https://developers.google.com/maps/documentation/javascript/react-map    
 
 
 
