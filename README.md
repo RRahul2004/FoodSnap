@@ -36,8 +36,14 @@ Press enter
 
 Open this directory in your favorite code editor/IDE   
 
-**Install all Node Modules**
-Simply type ``npm install`` in the terminal and press enter
+**Install all Node Modules**    
+Simply type ``npm install`` in the terminal and press enter    
+
+**Running the code**
+In the terminal, the directory should read ``YOUR-CHOSEN-FOLDER\foodsnap\``    
+Type ``cd app-code`` and press enter    
+Type ``npm run start`` to start the project in a live development server    
+It should open up a webpage ```http://localhost:3000``` where hot reload is enabled    
 
 
 
