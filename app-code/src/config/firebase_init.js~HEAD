@@ -1,0 +1,33 @@
+<<<<<<< HEAD:app-code/src/config/firebase_init.js
+import { initializeApp } from 'firebase/app';
+import {getAuth} from "firebase/auth";
+import {getFirestore} from "@firebase/firestore";
+=======
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+>>>>>>> fae4fbd3410a0a76797cab26645c11d1fb60d924:app-code/src/firebase_init.js
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBa_HQL1xmmckSAxNV1k-LLfayqiMXAAHU",
+  authDomain: "foodsnap-40072.firebaseapp.com",
+  databaseURL: "https://foodsnap-40072-default-rtdb.firebaseio.com",
+  projectId: "foodsnap-40072",
+  storageBucket: "foodsnap-40072.appspot.com",
+  messagingSenderId: "1029576173712",
+  appId: "1:1029576173712:web:cb33971f096f3cbdf21015",
+  measurementId: "G-8Y97FFWBRG"
+}
+
+// Initialize Firebase
+<<<<<<< HEAD:app-code/src/config/firebase_init.js
+const fire = initializeApp(firebaseConfig) ;
+const auth = getAuth(fire);
+const db = getFirestore(fire);
+
+export {auth, db}; 
+=======
+const app = initializeApp(firebaseConfig);
+
+// init firestore
+export const db = getFirestore(app);
+>>>>>>> fae4fbd3410a0a76797cab26645c11d1fb60d924:app-code/src/firebase_init.js
