@@ -5,12 +5,14 @@ import { Button } from '../components/Button';
 import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
+
+    // setting a state that stores if the user has clicked the navbar menu
     state = { clicked: false };
-    
+
+    // Setting the state
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
     }
-
 
     render() {
         return(

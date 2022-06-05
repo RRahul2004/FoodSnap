@@ -4,13 +4,16 @@ import {GoogleMap, Marker, useJsApiLoader} from "@react-google-maps/api";
 import './location.css';
 
 function Locution() {
+    // State hooks for users coordinates
     const [cords, setCords] = useState();
 
+    // Loading google scripts for the map API
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
         //googleMapsApiKey: "AIzaSyBOjXjnkULjxJ6dWnN-3I5FhS5RNdB_eBY",
     });
 
+    // If we fail to load the google scripts return "loading"
     if (!isLoaded) return <div>Loading...</div>
 
     const center = {
@@ -23,11 +26,12 @@ function Locution() {
         height: "88vh",
     };
 
+    // Hard-coded coordinates for the foodbanks
     const seva = { lat: 43.55989, lng: -79.647631};
     const miss = { lat: 43.623902, lng: -79.575136};
     const musl = { lat: 43.575342, lng: -79.646433};
 
-    //getting user location
+    // getting user  using built in Navigation API
     if (!cords) {
         navigator.geolocation.getCurrentPosition(
             async function (position) {

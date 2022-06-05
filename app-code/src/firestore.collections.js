@@ -1,3 +1,4 @@
+// This is a small file that stores all the Collection References used in the Landing page
 import { collection } from "firebase/firestore";
 import { db} from "./firebase_init";
 

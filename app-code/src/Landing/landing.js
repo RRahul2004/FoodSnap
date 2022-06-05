@@ -14,6 +14,7 @@ import { oilCollectionRef,
 } from "../firestore.collections";
 
 function Landing() {
+    // All state hooks that the landing page needs to work
     const [oil, setOil] = useState([]);
     const [beans, setBeans] = useState([]);
     const [flour, setFlour] = useState([]);
@@ -24,6 +25,11 @@ function Landing() {
     const [rice, setRice] = useState([]);
     const [corn, setCorn] = useState([]);
 
+    /**
+     * Function allows the food quantities to be updated realtime
+     * @param setFood: state hook
+     * @param coll: reference to the data collection within Firestore
+     */
     const quantityChange = (setFood, coll) => {
         useEffect(() => {
             const unsub = onSnapshot(coll, snapshot => {
@@ -37,6 +43,12 @@ function Landing() {
         }, []);
     }
 
+    /**
+     * Function allows the managers to increase the quantity of food they need
+     * @param {CollectionReference}col: Reference to the data collection within Firestore
+     * @param {string}id: The ID for the document the manager needs to edit
+     * @returns {Promise<void>}
+     */
     const increaseQuantity = async (col, id) => {
         const ref = doc(db, col, id);
         await updateDoc(ref, {
@@ -44,6 +56,12 @@ function Landing() {
         });
     }
 
+    /**
+     * Function allows the managers to decrease the quantity of food they need
+     * @param {CollectionReference}col: Reference to the data collection within Firestore
+     * @param {string}id: The ID for the document the manager needs to edit
+     * @returns {Promise<void>}
+     */
     const decreaseQuantity = async (col, id) => {
         const ref = doc(db, col, id);
         await updateDoc(ref, {

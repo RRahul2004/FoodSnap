@@ -1,3 +1,6 @@
+// These are all the menu items that I refer to in Navbar.js
+// Increases readability
+
 export const MenuItems = [
     {
         title: 'Home',
