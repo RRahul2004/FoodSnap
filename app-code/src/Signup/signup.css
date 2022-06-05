@@ -1,0 +1,43 @@
+.email{
+    font-size: 20px;
+    background-color: #8ecae6;
+    color: #023047;
+    border-radius: 10px;
+    border-style: none;
+    position: fixed;
+    width: 300px;
+    padding-block: 10px;
+    margin-top: 230px;
+    left: 180px
+}
+.password{
+  font-size: 20px;
+  background-color: #8ecae6;
+  color: #023047;
+  border-radius: 10px;
+  border-style: none;
+  position: fixed;
+  width: 300px;
+  padding-block: 10px;
+  margin-top: 330px;
+  left: 180px 
+}
+  
+.confirm-password{
+  font-size: 20px;
+  background-color: #8ecae6;
+  color: #023047;
+  border-radius: 10px;
+  border-style: none;
+  position: fixed;
+  width: 300px;
+  padding-block: 10px;
+  margin-top: 430px;
+  left: 180px 
+}
+.error{
+  color: rgb(235, 114, 114);
+  position: fixed;
+  left: 190px;
+  margin-top: 480px;
+}

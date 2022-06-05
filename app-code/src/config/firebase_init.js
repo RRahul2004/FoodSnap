@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import {getAuth} from "firebase/auth";
+import {getFirestore} from "@firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBa_HQL1xmmckSAxNV1k-LLfayqiMXAAHU",
@@ -10,8 +11,11 @@ const firebaseConfig = {
   messagingSenderId: "1029576173712",
   appId: "1:1029576173712:web:cb33971f096f3cbdf21015",
   measurementId: "G-8Y97FFWBRG"
-};
+}
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const fire = initializeApp(firebaseConfig) ;
+const auth = getAuth(fire);
+const db = getFirestore(fire);
+
+export {auth, db}; 

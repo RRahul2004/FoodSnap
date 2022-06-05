@@ -1,0 +1,160 @@
+* {
+    background-color: #023047;
+  }
+
+.header{
+  color: #FFFF;
+  position: fixed;
+  font-size: 70px;
+  left: 170px;
+  margin-top: 35px;
+}
+.subheader{
+  color: #FFFF;
+  position: fixed;
+  left: 200px;
+  margin-top: 170px;
+
+}
+
+.caption{
+  color: #FFFF;
+  position: fixed;
+  left: 235px;
+  margin-top: 490px;
+}
+
+/* .paragraph{
+  background-color: rgb(200, 21, 21);
+  color: #023047;
+  position: fixed;
+  right: 535px;
+  margin-top: 225px;
+  padding-block: 150px;
+  text-align: left;
+} */
+
+.line-left{
+  width: 60px;
+  height: 0.5px;
+  background-color: #FFFF;
+  color: #FFFF;
+  position: fixed;
+  margin-top: 503px;
+  left: 160px;
+}
+.line-right{
+  width: 60px;
+  height: 0.5px;
+  background-color: #FFFF;
+  color: #FFFF;
+  position: fixed;
+  margin-top: 503px;
+  left: 415px;
+}
+.guest{
+  background-color: #FFFF;
+  font-size: 30px;
+  text-align: center;
+  color: #023047;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  padding-block: 40px;
+  position: fixed;
+  right: 200px;
+  margin-top: 80px;
+}
+
+.error{
+  color: rgb(235, 114, 114);
+  position: fixed;
+  left: 190px;
+  margin-top: 380px;
+}
+.email{
+  font-size: 20px;
+  background-color: #8ecae6;
+  color: #023047;
+  border-radius: 10px;
+  border-style: none;
+  position: fixed;
+  width: 300px;
+  padding-block: 10px;
+  margin-top: 230px;
+  left: 180px
+}
+.password{
+  font-size: 20px;
+  background-color: #8ecae6;
+  color: #023047;
+  border-radius: 10px;
+  border-style: none;
+  position: fixed;
+  width: 300px;
+  padding-block: 10px;
+  margin-top: 330px;
+  left: 180px 
+}
+
+.login{
+  background-color: #FFFF ;
+  color: #023047;
+  position: fixed;
+  width: 90px;
+  padding-block: 12px;
+  margin-top: 415px;
+  left: 270px;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0.3ms;
+  border-style: none;
+}
+
+.browse{
+  background-color: #023047 ;
+  color: #FFFF;
+  position: fixed;
+  width: 90px;
+  padding-block: 12px;
+  margin-top: 585px;
+  right: 350px;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0.3ms;
+  border-style: none;
+}
+
+.signUp{
+  background-color: #FFFF ;
+  color: #023047;
+  position: fixed;
+  width: 90px;
+  padding-block: 12px;
+  margin-top: 550px;
+  left: 270px;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0.3ms;
+  border-style: none;
+}
+
+.browse:hover{
+  background-color: #FB8500;
+}
+
+.login:hover{
+  background-color: #FB8500 ;
+  color: #FFFF;
+}
+.signUp:hover{
+  background-color: #FB8500 ;
+  color: #FFFF;
+}
+
+::placeholder {
+  color: #023047;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
