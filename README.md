@@ -41,7 +41,8 @@ This entire page was added manually
 3. Type ``npm run start`` to start the project in a live development server    
 4.It should open up a webpage ```http://localhost:3000``` where hot reload is enabled    
 
-**Node Modules used**
+
+**Node Modules used**    
 ``npm install firebase``    
 We used firebase to store information such as emails and food quantities. This package allowed us to interact with Google Firestore and manipulate the data.    
 https://firebase.google.com/docs    
