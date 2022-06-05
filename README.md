@@ -22,11 +22,11 @@ ____________________________________________________________________
 This project was created with React JS and CSS
 To use/download/edit this project you muse have Node.JS and NPM installed
 
-**Getting access to the project**
+**Getting access to the project:**
 
 Create a emtpy directory wherever you want on your computer    
 
-Open a terminal inside that directory    
+Open a terminal inside that directory (right click --> open in terminal)   
 
 Copy the HTTP link from the green drop down menu in the Github Page    
 
@@ -34,5 +34,10 @@ Go back to the terminal and type "git clone {link you copied}
 
 Press enter    
 
-Open this directory in your favorite code editor/IDE    
+Open this directory in your favorite code editor/IDE   
+
+**Install all Node Modules**
+Simply type ``npm install`` in the terminal and press enter
+
+
 
