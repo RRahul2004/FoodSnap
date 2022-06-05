@@ -24,26 +24,21 @@ To use/download/edit this project you muse have Node.JS and NPM installed
 
 **Getting access to the project:**
 
-Create a emtpy directory wherever you want on your computer    
-
-Open a terminal inside that directory (right click --> open in terminal)   
-
-Copy the HTTP link from the green drop down menu in the Github Page    
-
-Go back to the terminal and type "git clone {link you copied}    
-
-Press enter    
-
-Open this directory in your favorite code editor/IDE   
+1. Create a emtpy directory wherever you want on your computer    
+2. Open a terminal inside that directory (right click --> open in terminal)   
+3. Copy the HTTP link from the green drop down menu in the Github Page    
+4. Go back to the terminal and type "git clone {link you copied}    
+5. Press enter    
+6. Open this directory in your favorite code editor/IDE   
 
 **Install all Node Modules**    
-Simply type ``npm install`` in the terminal and press enter    
+1. Simply type ``npm install`` in the terminal and press enter    
 
 **Running the code**
-In the terminal, the directory should read ``YOUR-CHOSEN-FOLDER\foodsnap\``    
-Type ``cd app-code`` and press enter    
-Type ``npm run start`` to start the project in a live development server    
-It should open up a webpage ```http://localhost:3000``` where hot reload is enabled    
+1. In the terminal, the directory should read ``YOUR-CHOSEN-FOLDER\foodsnap\``    
+2. Type ``cd app-code`` and press enter    
+3. Type ``npm run start`` to start the project in a live development server    
+4.It should open up a webpage ```http://localhost:3000``` where hot reload is enabled    
 
 
 
