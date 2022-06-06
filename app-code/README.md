@@ -5,7 +5,7 @@ Final Project for the ICS4U0 Course
 - Rahul R
 - Rayyan M
 
-Official Website Link: foodsnap.pages.dev
+Official Website Link: [foodsnap.pages.dev]
 
 
 # Getting Started with Create React App
