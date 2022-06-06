@@ -64,6 +64,11 @@ export default function Signup(){
                 <h4 className = 'error2'> {errorMessage2} </h4>
                 <button className={"signup-btn"} onClick={handleSignUp} >Sign Up</button>
             </div>
+            <div className='privacy'>
+                <a href="https://www.termsfeed.com/live/0e4de4cc-a45c-4a83-a952-746cc14482d2" target="_blank" rel="noreferrer">
+                    <button className='priv-btn'>Privacy</button>
+                </a>
+            </div>
         </div>
     );
 }

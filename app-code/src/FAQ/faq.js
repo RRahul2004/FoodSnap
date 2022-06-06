@@ -15,6 +15,11 @@ function Fraq() {
             <DropdownMenu></DropdownMenu>
           </FAQ>
         </FAQheader>
+        <div className='privacy'>
+                <a href="https://www.termsfeed.com/live/0e4de4cc-a45c-4a83-a952-746cc14482d2" target="_blank" rel="noreferrer">
+                    <button className='priv-btn'>Privacy</button>
+                </a>
+            </div>
       </div>
   );
 }
