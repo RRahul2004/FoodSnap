@@ -72,6 +72,11 @@ function Landing() {
         });
     }
 
+    /**
+     * Function checks if the user is logged in and returns the corresponding CSS
+     * @param {string} btn_type 
+     * @returns string
+     */
     const cssLogggedIn = (btn_type) => {
         const auth = getAuth();
         const user = auth.currentUser;
