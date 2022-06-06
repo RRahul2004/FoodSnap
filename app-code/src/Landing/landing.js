@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './landing.css'
 import { getDocs, doc, updateDoc, increment, onSnapshot } from 'firebase/firestore';
 import { db } from "../config/firebase_init";
+import { getAuth } from 'firebase/auth';
 import { oilCollectionRef,
     beansCollectionRef,
     flourCollectionRef,
@@ -71,6 +72,19 @@ function Landing() {
         });
     }
 
+    const cssLogggedIn = (btn_type) => {
+        const auth = getAuth();
+        const user = auth.currentUser;
+
+        if (user && btn_type === "increase") return "increase-button";
+        if (user && btn_type === "decrease") return "decrease-button";
+        if (user && btn_type=== "food") return "oil-not"
+        if (user === null && btn_type === "increase" || btn_type === "decrease") return "not-logged";
+        if (user === null && btn_type === "food") return "oil-not";
+
+        return "increase-button";
+    }
+
     return(
         <div className={"main-contents"}>
             <div className={"top-content"}>
@@ -99,8 +113,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getOil()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('oil', 'IGEE8MJLd9rN1EyfRKHj')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('oil', 'IGEE8MJLd9rN1EyfRKHj')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('oil', 'IGEE8MJLd9rN1EyfRKHj')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('oil', 'IGEE8MJLd9rN1EyfRKHj')}>-</button>
                     </div>
                 </div>
                 <div className={'banana'}>
@@ -116,8 +130,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getBeans()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('beans', 'tA3oxgteXRwCZRrnmhNI')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('beans', 'tA3oxgteXRwCZRrnmhNI')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('beans', 'tA3oxgteXRwCZRrnmhNI')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('beans', 'tA3oxgteXRwCZRrnmhNI')}>-</button>
                     </div>
                 </div>
                 <div className={'flour'}>
@@ -133,8 +147,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getFlour()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('flour', 'oRde2DbdIlATmwioXiin')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('flour', 'oRde2DbdIlATmwioXiin')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('flour', 'oRde2DbdIlATmwioXiin')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('flour', 'oRde2DbdIlATmwioXiin')}>-</button>
                     </div>
                 </div>
             </div>
@@ -155,8 +169,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getOil()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('peanutbutter', '7WT964XTYAzNUtXi2Nh8')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('peanutbutter', '7WT964XTYAzNUtXi2Nh8')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('peanutbutter', '7WT964XTYAzNUtXi2Nh8')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('peanutbutter', '7WT964XTYAzNUtXi2Nh8')}>-</button>
                     </div>
                 </div>
                 <div className={'banana'}>
@@ -172,8 +186,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getBeans()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('tuna', 'dMBdwblDMK3Nuz25tqsX')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('tuna', 'dMBdwblDMK3Nuz25tqsX')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('tuna', 'dMBdwblDMK3Nuz25tqsX')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('tuna', 'dMBdwblDMK3Nuz25tqsX')}>-</button>
                     </div>
                 </div>
                 <div className={'flour'}>
@@ -189,8 +203,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getFlour()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('eggs', 'UFsX5ainSFTBHxhktMIS')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('eggs', 'UFsX5ainSFTBHxhktMIS')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('eggs', 'UFsX5ainSFTBHxhktMIS')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('eggs', 'UFsX5ainSFTBHxhktMIS')}>-</button>
                     </div>
                 </div>
             </div>
@@ -211,8 +225,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getOil()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('pasta', 'aqW93njBzbJSGT9YNKw6')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('pasta', 'aqW93njBzbJSGT9YNKw6')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('pasta', 'aqW93njBzbJSGT9YNKw6')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('pasta', 'aqW93njBzbJSGT9YNKw6')}>-</button>
                     </div>
                 </div>
                 <div className={'banana'}>
@@ -228,8 +242,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getBeans()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('rice', 'jswy5PCoQkB6R7wTB2qf')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('rice', 'jswy5PCoQkB6R7wTB2qf')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('rice', 'jswy5PCoQkB6R7wTB2qf')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('rice', 'jswy5PCoQkB6R7wTB2qf')}>-</button>
                     </div>
                 </div>
                 <div className={'flour'}>
@@ -245,8 +259,8 @@ function Landing() {
                             return amount.data.quantity;
                         })}</h3>
                         {/*<button onClick={() => getFlour()}>Refresh</button>*/}
-                        <button className={"increase-button"} onClick={() => increaseQuantity('corn', 'IyMVvEgzMUGK0KXlIelo')}>+</button>
-                        <button className={"decrease-button"} onClick={() => decreaseQuantity('corn', 'IyMVvEgzMUGK0KXlIelo')}>-</button>
+                        <button className={cssLogggedIn("increase")} onClick={() => increaseQuantity('corn', 'IyMVvEgzMUGK0KXlIelo')}>+</button>
+                        <button className={cssLogggedIn("decrease")} onClick={() => decreaseQuantity('corn', 'IyMVvEgzMUGK0KXlIelo')}>-</button>
                     </div>
                 </div>
             </div>
