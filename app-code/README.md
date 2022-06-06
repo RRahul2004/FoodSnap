@@ -1,3 +1,6 @@
+![Food Snap Logo PNG](https://user-images.githubusercontent.com/87737710/172096601-5034c760-7221-49d7-ab9c-ddf82eeda677.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
