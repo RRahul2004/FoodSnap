@@ -1,27 +1,23 @@
 /*Rayyan*/
-
-:root{
-    --bg: rgb(0, 0, 0);
-    --bg-accent: rgb(90, 90, 90);
-    --text-colour: #FFF;
-    --nav-size: 81px;
-    --border: 1px solid rgb(56, 56, 56);
-    --border-radius: 12px;
-    --speed: 1100ms;
-    --faq-top-margin: 90px;
-    --send-border-colour: #FB8500;
+.contact-form{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 .contact-outer-container{
     flex-direction: column;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    height: calc(var(--nav-size)+ 300px)
+    height: 380px;
 }
 
 .contact-outer-container p{
-    color:#FFF;
+    color:white;
     font-size: 90px;
     font-weight: 700;
     margin-top:20px;
@@ -62,14 +58,14 @@
     font-size: 15px;
     margin: 10px;
     padding: 10px;
-    background-color: var(--send-border-colour);
-    border-color: var(--send-border-colour);
+    background-color: #FB8500;
+    border-color: #FB8500;
     color: rgb(255, 255, 255);
     font-weight: 400;
 }
 
 .contact-outer-container button:hover{
     cursor: pointer;
-    transition: background var(--speed);
+    transition: background 1100ms;
     filter: brightness(1.1);
 }
