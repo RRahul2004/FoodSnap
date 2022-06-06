@@ -4,6 +4,7 @@ import './Navbar.css';
 import { Button } from '../components/Button';
 import { Link } from 'react-router-dom';
 
+
 class Navbar extends Component {
 
     // setting a state that stores if the user has clicked the navbar menu
@@ -34,7 +35,7 @@ class Navbar extends Component {
                         );
                     })}
                 </ul>
-                <Button>Log Out</Button>
+
             </nav>
         );
     }

@@ -1,4 +1,5 @@
 // Code for the logout button on the navbar
+// Amaar
 
 import React from 'react';
 import './button.css';

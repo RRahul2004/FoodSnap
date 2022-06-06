@@ -19,12 +19,12 @@ body{
 }
 
 .nav-menu {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 100%;
     justify-content: center;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -80,6 +80,7 @@ body{
         transition: all 0.5s ease-out;
         z-index: 1;
         margin: 0;
+        top: 150px;
     }
 
     .nav-links {
@@ -137,7 +138,7 @@ body{
         transition: 250ms;
     }
 
-    .log-btn Button{
+    .log-btn{
         display: none;
     }
 }

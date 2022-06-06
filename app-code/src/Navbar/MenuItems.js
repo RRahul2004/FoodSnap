@@ -8,7 +8,7 @@ export const MenuItems = [
         cName:'nav-links'
     },
     {
-        title: 'Find a Bank',
+        title: 'Find',
         url: "/location",
         cName:'nav-links'
     },
@@ -19,12 +19,17 @@ export const MenuItems = [
     },
     {
         title: 'Contact',
-        url: "#",
+        url: "/contact",
         cName:'nav-links'
     },
     {
-        title: 'Manager',
-        url: "#",
-        cName:'nav-links-mobile'
-    }
+        title: 'Signup',
+        url: "/signup",
+        cName: 'nav-links'
+    },
+    {
+        title: 'Login',
+        url: "/login",
+        cName: 'nav-links'
+    },
 ]

@@ -1,7 +1,9 @@
+// Amaar
+
 import React, { useState, useEffect } from 'react';
 import './landing.css'
 import { getDocs, doc, updateDoc, increment, onSnapshot } from 'firebase/firestore';
-import { db } from "../firebase_init";
+import { db } from "../config/firebase_init";
 import { oilCollectionRef,
     beansCollectionRef,
     flourCollectionRef,
@@ -70,7 +72,7 @@ function Landing() {
     }
 
     return(
-        <div className={"main-content"}>
+        <div className={"main-contents"}>
             <div className={"top-content"}>
                 <div>
                     <h1>Want to help your community?</h1>
@@ -137,7 +139,7 @@ function Landing() {
                 </div>
             </div>
             <div className={"seva-items"}>
-                <h3>Mississauga Food Bank</h3>
+                <h3>Salvation Army</h3>
             </div>
             <div className={"foods"}>
                 <div className={"oil"}>
@@ -193,7 +195,7 @@ function Landing() {
                 </div>
             </div>
             <div className={"seva-items"}>
-                <h3>Muslim Welfare Center</h3>
+                <h3>Compass Foodbank</h3>
             </div>
             <div className={"foods"}>
                 <div className={"oil"}>

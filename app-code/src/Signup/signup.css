@@ -1,27 +1,80 @@
+/*Rahul*/
+
 .email{
     font-size: 20px;
     background-color: #8ecae6;
     color: #023047;
     border-radius: 10px;
     border-style: none;
-    position: fixed;
     width: 300px;
     padding-block: 10px;
-    margin-top: 230px;
+    margin:0;
     left: 180px
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pinz {
+    margin-top: 20px;
+}
+
+.stuff {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-btn {
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ffb703;
+    color: white;
+    margin-top: 50px;
+    border-style: none;
+    margin-left: 60px;
+}
+
 .password{
   font-size: 20px;
   background-color: #8ecae6;
   color: #023047;
   border-radius: 10px;
   border-style: none;
-  position: fixed;
   width: 300px;
   padding-block: 10px;
   margin-top: 330px;
   left: 180px 
 }
+
+.fields h2 {
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.login-info h2 {
+  color: white;
+  margin-top: 80px;
+}
+
+
+.error2{
+  color: rgb(235, 114, 114);
+  position: relative;
+  left: 50px;
+}
+
   
 .confirm-password{
   font-size: 20px;
@@ -29,15 +82,16 @@
   color: #023047;
   border-radius: 10px;
   border-style: none;
-  position: fixed;
   width: 300px;
   padding-block: 10px;
-  margin-top: 430px;
   left: 180px 
 }
-.error{
-  color: rgb(235, 114, 114);
-  position: fixed;
-  left: 190px;
-  margin-top: 480px;
+
+
+.pin {
+    border-radius: 10px;
+    height: 30px;
+    color: #023047;
+    background-color: #8ecae6;
 }
+

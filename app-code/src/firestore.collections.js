@@ -1,6 +1,6 @@
 // This is a small file that stores all the Collection References used in the Landing page
 import { collection } from "firebase/firestore";
-import { db} from "./firebase_init";
+import { db} from "../src/config/firebase_init";
 
 export const oilCollectionRef = collection(db, "oil");
 export const beansCollectionRef = collection(db, "beans");

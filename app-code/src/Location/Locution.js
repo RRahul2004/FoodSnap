@@ -1,3 +1,5 @@
+// Amaar
+
 import React, { useState } from "react";
 import {GoogleMap, Marker, useJsApiLoader} from "@react-google-maps/api";
 
@@ -10,7 +12,7 @@ function Locution() {
     // Loading google scripts for the map API
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        //googleMapsApiKey: "AIzaSyBOjXjnkULjxJ6dWnN-3I5FhS5RNdB_eBY",
+        googleMapsApiKey: "AIzaSyBOjXjnkULjxJ6dWnN-3I5FhS5RNdB_eBY",
     });
 
     // If we fail to load the google scripts return "loading"
@@ -56,9 +58,9 @@ function Locution() {
                     <h5 className={"seva-marker"}>Green Marker</h5>
                 </a>
                 <a target = ".blank" href = {"https://www.themississaugafoodbank.org/"} className="bank-2">
-                    <h2>Mississauga Food Bank</h2>
-                    <h3>3121 Universal Dr</h3>
-                    <h4>(905) 270-5589</h4>
+                    <h2>Salvation Army</h2>
+                    <h3>261 Queen St S</h3>
+                    <h4>(905) 821-2598</h4>
                     <h5 className={"mfb-marker"}>Red Marker</h5>
                 </a>
                 <a target = ".blank" href ={"https://www.muslimwelfarecentre.com/"} className="bank-3">

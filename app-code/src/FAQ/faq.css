@@ -1,0 +1,94 @@
+/*Rayyan*/
+
+:root{
+    --nav-size: 81px;
+    --border: 1px solid rgb(56, 56, 56);
+    --border-radius: 12px;
+    --speed: 1100ms;
+    --faq-top-margin: 90px;
+    --send-border-colour: #FB8500;
+}
+
+
+
+.header{
+    height: var(--nav-size);
+    background-color: #023047;
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    margin-top: var(--faq-top-margin);
+
+}
+
+.header-nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;/*experiment with start, end, baseline*/
+}
+
+.primary-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-button{
+    --button-size: calc(var(--nav-size)*0.5);
+    font-size: 35px;
+    height: 70px;
+    width:1000px;
+    background-color: #023047;
+    border-radius: var(--border-radius);
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropdown-button:hover{
+    filter: brightness(1.1);
+}
+
+.dropdown{
+    position: absolute;
+    top: calc(var(--nav-size)*2.13);
+    width: 1332px;
+    background-color: #023047;
+    border: var(--border);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.dropdown-question{
+    height: calc(var(--nav-size)*0.5);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background var(--speed);
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}
+.dropdown-question:hover{
+    background-color: rgb(123, 128, 128);
+    filter:brightness(1.1);
+}
+
+.pageHeader{
+    height: 10px;
+    font-size: 50px;
+    margin-left: auto;
+}
+
+.question-answer{
+    font-size: 20px;
+    color: white;
+}
