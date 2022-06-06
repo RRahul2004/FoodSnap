@@ -1,4 +1,11 @@
-![Food Snap Logo PNG](https://user-images.githubusercontent.com/87737710/172096601-5034c760-7221-49d7-ab9c-ddf82eeda677.png)
+![Food Snap Logo PNG](https://user-images.githubusercontent.com/87737710/172096601-5034c760-7221-49d7-ab9c-ddf82eeda677.png)    
+Final Project for the ICS4U0 Course
+**Developed by**
+- Amaar S
+- Rahul R
+- Rayyan M
+
+Official Website Link: foodsnap.pages.dev
 
 
 # Getting Started with Create React App
