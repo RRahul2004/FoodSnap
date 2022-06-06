@@ -12,7 +12,7 @@ function Locution() {
     // Loading google scripts for the map API
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: "AIzaSyBOjXjnkULjxJ6dWnN-3I5FhS5RNdB_eBY",
+        googleMapsApiKey: GOOGLE_MAPS_API,
     });
 
     // If we fail to load the google scripts return "loading"
